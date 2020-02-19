@@ -36,6 +36,7 @@ func main() {
 	}
 
 	dest := os.Args[1]
+	fmt.Fprintf(os.Stderr, "version: %v\n", request.Version)
 	fmt.Fprintf(os.Stderr, "source: %v\n", request.Source)
 	fmt.Fprintf(os.Stderr, "params: %v\n", request.Params)
 

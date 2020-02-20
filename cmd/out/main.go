@@ -41,7 +41,7 @@ func main() {
 
 	t := time.Now()
 	response := Response{
-		resource.Version{Date: t.String()},
+		resource.Version{Date: t.Format("2006-01-02 15:04")},
 		[]resource.MetadataPair{
 			{Name: "Year", Value: strconv.Itoa(t.Year())},
 			{Name: "Month", Value: t.Month().String()},

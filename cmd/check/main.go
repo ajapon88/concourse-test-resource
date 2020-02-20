@@ -31,6 +31,5 @@ func main() {
 	response := Response{}
 	response = append(response, resource.Version{Date: time.Now().Format("2006-01-02 15:04")})
 
-	json.NewEncoder(os.Stderr).Encode(response)
 	json.NewEncoder(os.Stdout).Encode(response)
 }
